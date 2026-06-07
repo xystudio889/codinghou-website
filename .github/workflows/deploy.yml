@@ -16,6 +16,9 @@ jobs:
     # 3. 任务的具体步骤
     steps:
       # 部署到 GitHub Pages 分支
+      # 步骤1: 签出你的仓库代码到虚拟机
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
